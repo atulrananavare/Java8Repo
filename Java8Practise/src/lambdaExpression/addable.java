@@ -8,6 +8,7 @@ public interface addable {
 		System.out.println("this is default method from addable");
 	}
 	
+	
 	default int m2() {
 		return 0;
 	}
