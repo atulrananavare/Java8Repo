@@ -26,7 +26,7 @@ public class EmployeeDatabase {
 			  return a;
 		  }).collect(Collectors.toList());
 		  
-		 // System.out.println(list);
+	
 		  
 		  Stream<Employee> sort = getEmployees.stream().sorted(Comparator.comparing(Employee::getName).thenComparing(Employee::getSalary));
 		
