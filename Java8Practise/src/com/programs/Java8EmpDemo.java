@@ -20,5 +20,14 @@ public class Java8EmpDemo {
 		// sort employee based on theire salaries in desc order
 		List<Employee> e=empList.stream().sorted((o1, o2) -> (int) (o2.getSalary() - o1.getSalary())).skip(3).collect(Collectors.toList());
 		System.out.println(e);
+		
+		String str="sdfvsdf68fsdfsf8999fsdf09";
+		String numberOnly= str.replaceAll("[^0-9]", "");
+		
+		System.out.println(numberOnly);
+		
+		String s = "helloThisIsA1234Sample";
+		s = s.replaceAll("\\D+","");
+		System.out.println(s);
 	}
 }

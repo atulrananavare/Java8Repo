@@ -3,6 +3,8 @@ package com.programs;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class DuplicateElementsInGivenList {
 
@@ -27,6 +29,12 @@ public class DuplicateElementsInGivenList {
 		Integer max=list.stream().max(Integer::compare).get();
 		System.out.println("Max number is: "+max);
 
+		List<String> strList=Arrays.asList("code","decode","code","dd","dhhdg","dd");
+		HashSet<String> set2=new HashSet<>();
+		Set<String> duplicate=strList.stream().filter(name->!set2.add(name)).collect(Collectors.toSet());
+		System.out.println(duplicate);
 	}
+	
+	
 
 }

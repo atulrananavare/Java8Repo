@@ -12,6 +12,8 @@ public class Test  {
 		multi.multi(5, 8);
 		
 		
+		
+		
 	}
 
 	
